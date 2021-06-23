@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Project 2: Plant Disease Classification and Detection along with Plant leave Generation  | Rabin</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="A tool that can detect the disease  in Plant leaves.">
+    <meta name="generator" content="Hugo 0.82.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+
+  
+  
+    <link rel="stylesheet" href="https://rabintiwari45.github.io/Portfolio/ananke/dist/main.css_5c99d70a7725bacd4c701e995b969fea.css" >
+  
+
+
+
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Project 2: Plant Disease Classification and Detection along with Plant leave Generation " />
+<meta property="og:description" content="A tool that can detect the disease  in Plant leaves." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rabintiwari45.github.io/Portfolio/post/project-2/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-07-01T11:00:59-04:00" />
+<meta property="article:modified_time" content="2020-07-01T11:00:59-04:00" /><meta property="og:site_name" content="Rabin" />
+
+<meta itemprop="name" content="Project 2: Plant Disease Classification and Detection along with Plant leave Generation ">
+<meta itemprop="description" content="A tool that can detect the disease  in Plant leaves."><meta itemprop="datePublished" content="2020-07-01T11:00:59-04:00" />
+<meta itemprop="dateModified" content="2020-07-01T11:00:59-04:00" />
+<meta itemprop="wordCount" content="3586">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Project 2: Plant Disease Classification and Detection along with Plant leave Generation "/>
+<meta name="twitter:description" content="A tool that can detect the disease  in Plant leaves."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  
+  <header class="cover bg-top" style="background-image: url('https://rabintiwari45.github.io/Portfolio/images/plant.jpg');">
+    <div class="pb3-m pb6-l bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://rabintiwari45.github.io/Portfolio/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Rabin
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://rabintiwari45.github.io/Portfolio/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://rabintiwari45.github.io/Portfolio/contact/" title="Contact page">
+              Contact
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://rabintiwari45.github.io/Portfolio/post/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+<a href="https://www.linkedin.com/in/rabin-babu-8a1894176/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/rabintiwari45" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Project 2: Plant Disease Classification and Detection along with Plant leave Generation </h1>
+          
+            <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              A tool that can detect the disease  in Plant leaves.
+            </h2>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://rabintiwari45.github.io/Portfolio/post/project-2/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://rabintiwari45.github.io/Portfolio/post/project-2/&amp;text=Project%202:%20Plant%20Disease%20Classification%20and%20Detection%20along%20with%20Plant%20leave%20Generation%20" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://rabintiwari45.github.io/Portfolio/post/project-2/&amp;title=Project%202:%20Plant%20Disease%20Classification%20and%20Detection%20along%20with%20Plant%20leave%20Generation%20" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Project 2: Plant Disease Classification and Detection along with Plant leave Generation </h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-07-01T11:00:59-04:00">July 1, 2020</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h1 id="overview">Overview</h1>
+<ul>
+<li>We will use transfer learning to classify plant disease.</li>
+<li>We will implement various object detection models like Faster RCNN and SSD to detect plant disease.</li>
+<li>Generate the fake image using various GANs and study it&rsquo;s utility as training sample for experiment.</li>
+</ul>
+<h1 id="introduction">Introduction</h1>
+<p>Plant disease is a serious problem for farmes all over the world. It reduces the production and quality of the food. While the global population is rapidly increasing, reduction in availability and access to food increases the cost of food. Various methods have been developed to diagnose diseases, but still plant disease poses threat to farmers. Machine learning and deep learning have been successfully applied to various domains like health care, finance, communication, etc. The agricultural industry can also benefit from modern technology. The dataset existing in current time is lab controlled which perform very poorly on real life condition with natural background, lightning, different stages of symptoms. So the authors of Plant Doc Dataset have prepared their dataset containing images from non controlled environment. We will use the Plant Doc dataset in our project for the classification and detection of plant diseases.</p>
+<p>Nowadays most image classification problems are solved using a convolution neural network. Convolution neural networks became popular when AlexNet beat the previous traditional methods by a huge margin. The architecture of AlexNet consists of five convolution layers,  max-pooling layers, and fully connected layers with relu non-linearity. Due to its huge success, it has been a standard practice to tackle image classification tasks with CNN. The disadvantage of using CNN is we require a very large dataset to train otherwise our model will overfit (it perform perfectly on specific dataset only). The dataset we are using consists of only 2340 images from 27 classes, so it becomes very difficult to train a CNN model.</p>
+<h1 id="learning-with-a-small-dataset">Learning with a small dataset</h1>
+<p>The problem of learning with a small dataset can be approached through:</p>
+<ul>
+<li>Data Augmentation</li>
+<li>Transfer Learning</li>
+</ul>
+<ol>
+<li>Data Augmentation: Data augmentation is the process of increasing the number of training samples by transformation like scaling, zooming, flipping, rotation, etc while the labels of the data are preserved. It has been used as a regularizer in preventing overfitting and to increase the generalization power of the model. Another approach like generating fake images to increase the number of training images with the help of generative models like GAN can also be used. We will discuss this in more detail about GANs in a later section. The figure of scaling, flipping, rotation is given below.</li>
+</ol>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/original_image.png" width="250" height="300"/> 
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/flipped_image1.png" width="250" height="300"/> 
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/flipped_image2.png" width="250" height="300"/> 
+</figure>
+
+<ol start="2">
+<li>Transfer Learning: Transfer learning is applying knowledge gained in one task to solve a problem in another similar domain. Transfer learning has shown promising results in many image classification tasks. When there is a lack of a large labeled dataset, transfer learning helps to address this limitation by transferring the learned parameter of well trained CNN model on a large dataset (e.g ImageNet) to solve other similar classification problems. Transfer learning can be performed in two different ways:</li>
+</ol>
+<ul>
+<li>
+<p>Feature extraction: This approach utilizes a well-trained CNN model on a large dataset as a feature extractor for the target domain. All convolution layers of the well-trained CNN model are frozen while the fully connected layers are removed.</p>
+</li>
+<li>
+<p>Fine-tuning: This approach also utilizes a well-trained CNN model on a large dataset as the base and replaces the classifier layer with a new classifier layer. In this method convolution layer of well trained CNN model are not frozen and their weight can get updated during the training process. The initialization of the base model is done by the pretrained weights and the classifier layer weights are random weight.</p>
+</li>
+</ul>
+<p>In our project, we experiment with the Inception ResNetV2 and Mobile Net as our base model. The results from the two models are:</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/plant_accuracy.png" width="250" height="300"/> 
+</figure>
+
+<p>Now we will combine the PlantDoc data with Plant Village Dataset. Plant Village dataset is the collection of different images of plant disease which are collected in the lab setting. But PlantDoc is obtained from a natural setting. We will add (100-132) images per class to our original dataset while we don&rsquo;t add any images in two classes i.e. Apple Rust Leaf and Grape Black Rot. The test set contains images from the PlantDoc dataset only. The result after using both PlantDoc and Plant Village date is given below table.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/plant_accuracy1.png" width="250" height="300"/> 
+</figure>
+
+<p>We can see that the model&rsquo;s accuracy increases by 5% in Inception ResnetV2 and by 4% in MobileNet although there is high contrast in Plant Village and PlantDoc datasets.</p>
+<p>Images form PlantDoc dataset.
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/plantdoc1.png" width="250" height="300"/> 
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/plantdoc2.png" width="250" height="300"/> 
+</figure>
+</p>
+<p>Images from Plant Village Dataset.
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/plantvillage1.png" width="250" height="300"/> 
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/plantvillage2.png" width="250" height="300"/> 
+</figure>
+</p>
+<p>Examining the wrong prediction, we found that 14 images were placed in the wrong classes. The images were:</p>
+<p>test/Corn Gray leaf spot/IMG_42231.jpg</p>
+<p>test/Corn Gray leaf spot/rsz0803Figure6.jpg</p>
+<p>test/Corn leaf blight/0796.20graylssymt.jpg</p>
+<p>test/Corn leaf blight/07c.jpg</p>
+<p>test/Corn leaf blight/2013Corn_GrayLeafSpot_0815_0003.JPG.jpg</p>
+<p>test/Corn leaf blight/corn-disease-update-fig-3-gray-leaf-spot.jpg</p>
+<p>test/Corn leaf blight/corn-gray-leaf-spot-f4.jpg
+test/Potato leaf early blight/3023.jpg</p>
+<p>test/Potato leaf early blight/backus-056-potato-blight.jpg</p>
+<p>test/Potato leaf early blight/early-blight-or-target-spot-alternaria-solani-lesions-on-a-tomato-AXK6AY.jpg</p>
+<p>test/Potato leaf late blight/20090710-lateblight.jpg</p>
+<p>test/Potato leaf late blight/5816740026_d42ef24413_Phytophthora-Infestans.jpg</p>
+<p>test/Soyabean leaf/leaf-raspberry-isolated-on-a-white-stock-photography-image-10106222-1625198.jpg</p>
+<p>test/Potato leaf early blight/potatobd001.jpg</p>
+<p>After removing images from the misplaced class. Out of 14 images, our model predicted 11 images correctly. The result is given in below table:</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/plant_accuracy2.png" width="250" height="300"/> 
+</figure>
+
+<p>The heatmap of confusion matrix is given below:</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/plant_heatmap.png" width="350" height="700"/> 
+</figure>
+
+<p>Analyzing the heatmap, we can see the wrong predictions are from the same category i.e Apple, Corn, Potato and Tomato categories. The images from these classes are very hard to distinguish because they look visually similar. Some of the images are given below:</p>
+<p><figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/same2.png" width="250" height="200"/> 
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/same3.png" width="250" height="200"/> 
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/same1.png" width="250" height="200"/> 
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/same4.png" width="250" height="200"/> 
+</figure>
+</p>
+<p>These problems can be tackled by increasing the labeled data from the above-mentioned categories.</p>
+<h1 id="interpreting-the-model-prediction-with-gradient-weighted-class-activation-mapgrad-cam">Interpreting the model prediction with Gradient-Weighted Class Activation Map(Grad-CAM)</h1>
+<p>Interpretability is a relation between formal theories that express the possibility of interpreting or translating one into another (from Wikipedia). Interpretability in machine learning and deep learning models has been a major concern for long time. The traditional machine learning algorithm is more interpretable while its accuracy and robustness are low and on the other hand deep learning is great at accuracy and robustness but lacks interpretability. So there is a tradeoff between accuracy and interpretability. Deep neural networks are considered as black box because it&rsquo;s really hard to figure out what is happening to make the output. So interpreting these models can help to gain more trust in predictions.</p>
+<p>In 2016, a method called Gradient weighted class activation mapping was developed to make convolution neural network-based model more transparent by visualizing the region of input that is important for prediction. Class discriminative (i.e localize the category in the image) and high-resolution (i.e capture the fine-grained details) make a good visualization. Grad-CAM is a strict generalization of CAM(Class Activation Mapping). The disadvantage of CAM is you need to feed the output of Global Average Pooling to the softmax layer which hurts the accuracy of the model. Grad-CAM generalizes CAM which allows us to visualize the region of input that is important for any kind of CNN architecture. Grad-CAM computes the gradient of the score for class C with respect to feature map activation of a convolution layer. These gradients are global averaged to obtain the neuron importance weight.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/grad_cam3.png" width="250" height="150"/> 
+</figure>
+
+<p>The neuron importance weight captures the importance of feature map k for a target class C. Then the linear combination of the forward activation map is performed and followed by ReLU to obtain</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/grad_cam4.png" width="250" height="150"/> 
+</figure>
+
+<p>This result is the heatmap of the same size of feature map like 14 x 14. The ReLU activation is used because we are only interested in the features that have a positive influence on the class of interest. The produced heatmap is rescaled and superimposed on the original image to visualize the important regions in the image for prediction.</p>
+<p>Below are some of the results obtained by Grad-CAM.</p>
+<p><figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/plant_grad_cam1.png" width="250" height="200"/> 
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/plant_grad_cam2.png" width="250" height="200"/> 
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/plant_grad_cam3.png" width="250" height="200"/> 
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/plant_grad_cam4.png" width="250" height="200"/> 
+</figure>
+</p>
+<p>From the above figure, we can see the model is learning to focus on the infected parts of the leaves to make predictions. The last two figures are from the same class i.e Tomato Early Blight. In this figure we made our model predict them as Tomato Early Blight and Tomato Septoria Gray Spot respectively. The visualizations are quite interesting. It focuses on the infected upper part to make its prediction as Tomato Early Blight and it focuses on the infected lower part to make its a prediction as Tomato Septoria Gray Spot.</p>
+<h1 id="plant-disease-detections">Plant disease detections</h1>
+<p>The plant disease classification method often fails to perform in a different situation. Among which some of them are listed below:</p>
+<ul>
+<li>Classification method fails when there are multiple diseases on the same leaf</li>
+<li>Classification method fails when there are multiple leaves on images where they could be from the same species with different classes.</li>
+<li>Images with complex background poses difficulties in classification models.</li>
+</ul>
+<p>So, Object Detection algorithms were explored as a solution to tackle the above situation.</p>
+<p>Deep Learning based object detection can be classified into two different types:</p>
+<ol>
+<li>Two-stage detector (such as RCNN, Fast RCNN, Faster RCNN)</li>
+<li>One-stage detector (such as YOLO, SSD)</li>
+</ol>
+<p>We will briefly look into both types of algorithms and compare their result on plant disease detection tasks.</p>
+<h1 id="two-stage-detectors">Two stage detectors</h1>
+<p>In, this type of detection, at first, they extract series of the region of interest using a proposal algorithm. Then classification and localization are performed on these proposals. Since the region of interest is further processed which leads to higher accuracy than one stage detector.</p>
+<p>We will begin with a short introduction of R-CNN, Fast R-CNN, and Faster RCNN.</p>
+<p>R-CNN stands for Region-based Convolution Neural Network. In short, there are two different types of computation that take place in R-CNN. There is a region proposal method for input image to extract nearly 2000 regions which are likely to contain objects. Each of the region proposals is reshaped into a fixed shape and these reshaped images are fed into convnets like AlexNet, VGG 16, Resnet, etc which produces feature representation. The feature is passed to a linear classifier to classify into one of the categories in the data and bounding box regressor which will produce a bounding box offset for the refinement of the original proposal.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/rcnn.png" width="250" height="500"/> <figcaption>
+            <h4>Figure of RCNN Model</h4>
+        </figcaption>
+</figure>
+
+<h6 id="image-sourcehttpcs231nstanfordeduslides2017cs231n_2017_lecture11pdfhttpcs231nstanfordeduslides2017cs231n_2017_lecture11pdf">Image Source:<a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture11.pdf">http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture11.pdf</a></h6>
+<p>Limitation of R-CNN</p>
+<ol>
+<li>Training takes place in three different stages.</li>
+</ol>
+<ul>
+<li>fine-tune using log loss</li>
+<li>train the svm classifier</li>
+<li>train the bounding box regressor</li>
+</ul>
+<ol start="2">
+<li>Training and inference are slow.</li>
+</ol>
+<p>So, to overcome these limitations Fast R-CNN was proposed. The main idea was to reduce the computation time of the R-CNN algorithm. Instead of running a convnet for 2000 resized region proposal, they just ran the input image through convnet to get a feature map and run a selective search to get region proposal. They mapped the region proposal to feature map using ROI projection then extracted the fixed dimension representation for each region proposal regardless of its original size and aspect ratio using ROI pooling. Then the fixed dimension representations are passed to fully connected layer for prediction. Unlike in R-CNN, the training is done at single stage using combined loss(i.e classification loss + bounding box loss).</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/fast_rcnn.jpg" width="250" height="500"/> <figcaption>
+            <h4>Figure of Fast R-CNN Model</h4>
+        </figcaption>
+</figure>
+
+<h6 id="image-sourcehttpcs231nstanfordeduslides2017cs231n_2017_lecture11pdfhttpcs231nstanfordeduslides2017cs231n_2017_lecture11pdf-1">Image Source:<a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture11.pdf">http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture11.pdf</a></h6>
+<p>Fast R-CNN has significantly decreased the training time still the test time is dominated by region proposals and the selective search algorithm also became a bottleneck for a complex dataset like COCO. So the author moved beyond the hand-designed method for the region proposal to the learned method and introduced Faster R-CNN.</p>
+<p>In Faster R-CNN, the author replaced the selective search method with CNN for region proposal. They named it Region Proposal Network. The RPN network takes feature map as input and predicts region proposal with a wide range of scale and aspect ratio. Now we have a region proposal, the following step is similar to Fast-RCNN.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/faster_rcnn1.png" width="250" height="500"/> <figcaption>
+            <h4>Figure of Faster R-CNN Model</h4>
+        </figcaption>
+</figure>
+
+<h6 id="image-source-the-above-image-was-taken-from-paper-ren-et-al-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networkshttpsarxivorgpdf150601497pdf">Image Source: The above image was taken from paper <a href="https://arxiv.org/pdf/1506.01497.pdf">Ren et al, “Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks”</a></h6>
+<h1 id="one-stage-detector">One stage detector</h1>
+<p>In one stage detector, it detects the objects in a single pass using a convolution neural network. So they are fast as compared to the two-stage detector and can be used for real-time application. Examples of one-stage detectors are YOLO and SSD. We will discuss SSD and use this architecture in our project.</p>
+<p>SSD stands for Single Shot Multibox Detector. One of the objectives of SSD is to detect objects using a single deep neural network. Image with ground truth boxes is passed as input for SSD. The standard image classification architecture is used to extract feature maps which are used to produces bounding boxes and score for the presence of object followed by non-maximum suppression to produce the final detection. But the last feature map is very small in size so the small object gets lost in the latter features map which poses difficulty in detecting small objects. To overcome this problem, instead of using single feature map it performs detection at different feature maps layer and allows detection at multiple scales which is shown in the figure below:</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/ssd2.jpg" width="250" height="250"/> <figcaption>
+            <h4>Figure of SSD Model</h4>
+        </figcaption>
+</figure>
+
+<h6 id="image-source-the-above-image-was-taken-from-paper-liu-et-al-ssd-single-shot-multibox-detectorhttpsarxivorgpdf151202325pdf">Image Source: The above image was taken from paper <a href="https://arxiv.org/pdf/1512.02325.pdf">Liu et al, SSD: Single Shot MultiBox Detector</a></h6>
+<p>For Plant disease detection, we will use the PlantDoc dataset which available at the roboflow public dataset because RoboFlow has corrected 28 annotations and the data is also available in TFRecord format.</p>
+<p>We will use two model i.e faster_rcnn_resnet101_v1_640x640 and ssd_mobilenetv2_320x320 in our project and compare their result. The result is:</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/object_detection_map.png" width="250" height="200"/> 
+</figure>
+
+<p>We have used momentum optimizer with cosine decay learning rate for both the model. For ssd_mobilenetv2, the learning_rate_base and warmup_learning_rate are 0.008 and 0.0133 respectively, and the batch size of 64. For faste_rcnn_resnet101, the learning_rate_base and warmup_learning_rate are 0.004 and 0.0133 respectively and the batch size is set to 4. The nms_threshold for the first and second stage is set to 0.6 and 0.5 respectively and max_total_detection is set to 200.</p>
+<p>Some of the detections are given below:</p>
+<p><figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/object_detection1.png" width="250" height="300"/> 
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/object_detection7.png" width="250" height="300"/> 
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/object_detection6.png" width="250" height="300"/> 
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/object_detection5.png" width="250" height="300"/> 
+</figure>
+</p>
+<h1 id="generative-models">Generative Models</h1>
+<p>A deep learning system requires a huge amount of data for training otherwise it will suffer from overfitting and low accuracy to fit the complex data. In our case, the number of images per class is between A-B which is fairly small to what these deep learning systems require. Data augmentation has been a method of choice to increase the training samples. Recently developed different variants of GANs have also shown promising results in generating images. So we will look at the images generated by different variants of GANs like DCGAN and ProGAN and their usefulness for training samples.</p>
+<p>GAN was firstly introduced in a paper by Ian Goodfellow and other researchers in 2014. In GAN, the goal is to learn a data distribution and generate a sample that looks like the original distribution. GANs are deep neural net architecture comprised of two neural networks competing for one against the other so they are called adversarial. It consists of two networks a generator and a discriminator. The generator is assigned a task to generate the sample that looks like real images from a noise vector while a discriminator is used to distinguish between generated samples and the original sample. The role of the generator is to create an image in such a way so that it can fool the discriminator while the role of the discriminator is to distinguish between actual data and generated data accurately.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/gannext.png" width="250" height="300"/> <figcaption>
+            <h4>Figure of GAN Architecture</h4>
+        </figcaption>
+</figure>
+
+<h6 id="image-sourcewwwkdnuggetscom201701generative--learninghtmlwwwkdnuggetscom201701generative--learninghtml">Image Source:<a href="www.kdnuggets.com/2017/01/generative-%E2%80%A6-learning.html">www.kdnuggets.com/2017/01/generative-…-learning.html</a></h6>
+<p>The loss function for GAN is:
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/gan_loss1.png" width="250" height="90"/> 
+</figure>
+</p>
+<p>where</p>
+<p>D(x) is discriminator output for real data</p>
+<p>D(G(z)) is discriminator output for generated data</p>
+<p>The discriminator is trained to maximize the loss function such that D(x) is close to 1 and D(G(z)) is close to 0. Generator is trained to minimize log(1-D(G(z))) such that D(G(z)) is close to 1.</p>
+<h3 id="problems-in-gan">Problems in GAN</h3>
+<ul>
+<li>Mode Collapse: During training, the generator may collapse to a setting where it always produces the same output.</li>
+<li>Vanishing Gradient: The gradient of the generator network becomes close to zero during the initial process of training.</li>
+<li>Lack of proper evaluation metric.</li>
+</ul>
+<p>GAN is well known for being delicate and unstable. So, a form of GAN called Wasserstein GAN was proposed. In WGAN, Wasserstein distance or Earth Mover distance is used as the GAN loss function. Wasserstein distance is a way of measuring the distance between two probability distributions. The mathematical equation for Wasserstein distance is:</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/wgan_wass.png" width="250" height="90"/> 
+</figure>
+
+<p>where</p>
+<p>Pr = real probability distribution</p>
+<p>Pg = generated probability distribution</p>
+<p>γ∈Π(Pr,Pg) = one transport plan</p>
+<p>In the above equation, the infimum (minimum) is intractable. So, the author proposed Kantorovich-Rubinestein duality to</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/kant.png" width="250" height="90"/> 
+</figure>
+
+<p>where supremum is overall the 1-Lipschitz functions.</p>
+<p>1-Lipschitz constant means the slope of a line between two points x and y shouldn&rsquo;t exceed 1.</p>
+<p>The supremum over all the function is replaced with a parameterized family of function W</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/wgan_param.png" width="250" height="90"/> 
+</figure>
+
+<p>During training, it is difficult to maintain 1-Lipschitz continuity of fw. The author clamps the weight to a fixed box [W=[-0.01,0.01]] after each gradient update to preserve the Lipschitz function.</p>
+<p>Weight clipping to enforce the Lipschitz constraint can lead to undesired behavior like gradient exploding when c is large and vanishing gradient when c is small. Thus to get rid of weight clipping the author of WGAN-GP proposed to add a gradient penalty term in the loss function of the critic. The critic is similar to discriminator in the GAN but instead of outputting binary class, the critic output the score of realness for a given image. The new objective is</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/wgan_gp.png" width="250" height="90"/> 
+</figure>
+
+<p>where</p>
+<p>xˆ = εx + (1 − ε)x˜</p>
+<p>x = real image</p>
+<p>x˜ = generated image</p>
+<p>At first, we will use DCGAN (Deep Convolution Generative Adversarial Network) WGAN_GP as a proof of concept whether the synthetic data generated have similar features as of original images. The architecture of the generator consists of one dense layer, one reshaping layer, four upsampling layers, five convolution layers, and four batch normalization layers. The architecture of the critic consists of five convolution layers, five dropout layers, and one dense layer. Training DCGAN takes a lot of resources so will only take a sample of data set to train the model. The training sample was taken from three classes i.e. Apple Scab leaf, Apple Rust leaf, Apple leaf. The images generated by DCGAN WGAN_GP are shown below:</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/dcgan_plantdoc.png" width="250" height="500"/> <figcaption>
+            <h4>Image generated by DCGAN WGAN_GP</h4>
+        </figcaption>
+</figure>
+
+<p>Based on the above image, it can be observed that generating an image with complex background fails because the images get highly affected by background features.</p>
+<p>We also used the PlantVillage dataset which doesn&rsquo;t contain the background as the images were captured in a laboratory setup. The training sample was taken from one class i.e. Apple Healthy leaf. The images generated by DCGAN WGAN_GP are shown below:</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/dcgan_plantvillage.png" width="250" height="500"/> <figcaption>
+            <h4>Image generated by DCGAN WGAN_GP</h4>
+        </figcaption>
+</figure>
+
+<p>Based on the above image, it can be observed that the generated images are much more appealing than the images from the PlantDoc dataset. The images are trying to capture the shape of the leaf. The DCGAN model is only trained for 2500 epochs because training the DCGAN WGAN_GP model takes a lot of resources and time. Training on PlantVillage Dataset for a longer duration can produce images that look similar to original images.</p>
+<p>The images generated by DCGAN are of size 64x64. Training DCGAN to produce a higher resolution image can be hard because of instability. To use the synthetic images for training purposes we need images of size around 256x256.</p>
+<p>For this reason, we have used Progressively Growing GAN(ProGAN) to generate the image of size 256x256. The key idea of ProGAN is to grow the generator and discriminator progressively. Both generator and discriminator start by creating the image of size 4x4 for a fixed number of iteration and then progressively increases the resolution by adding layers to the network till it becomes of size 1024x1024. This process both speeds the training and greatly stabilizes the training process allowing us to generate high-resolution images.</p>
+<p>For training ProGAN, sample images were taken from 8 classes of PlantVillage Dataset. The generated images were of size 256x256. Below are the images generated by ProGAN:</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/progan32.png" width="250" height="500"/> <figcaption>
+            <h4>Image generated by ProGAN of size 32x32</h4>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/progan72.png" width="250" height="500"/> <figcaption>
+            <h4>Image generated by ProGAN of size 64X64</h4>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/progan.png" width="250" height="500"/> <figcaption>
+            <h4>Image generated by ProGAN of size 128X128</h4>
+        </figcaption>
+</figure>
+
+<p>Due to resource constraints, we couldn&rsquo;t generate an image of size 256X256. So we only generated images up to size 128X128.</p>
+<p>Based on the above image, it can be observed that the generated image poses quality like shape, color, and texture as of real images. But, training the same ProGAN architecture on the PlantDoc dataset produces images that are very much indistinguishable because of complex background features. So it is difficult to generate the images having complex background or images which are taken from real-life conditions. The images generated by ProGAN on PlantVillage look similar to original images which can potentially be used as training samples.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>In this project, we proposed an approach to detect/classify plant diseases using various image classification and object detection models. We also explored various GAN architectures like DCGAN_WGAN_GP and ProGAN to generated fake images of plant leaves. We used both datasets i.e PlantDoc and PlantVillage and achieved a classification accuracy of 70% using the MobileNet model which outperforms InceptionResNetV2 by 4%. We used an improved dataset from RoboFlow for object detection and achieved an mAP score of 45% using faster_rcnn_resnet101 model which outperforms ssd_mobilenetv2 by 4%. We also generated fake images using both of the datasets. The images from natural setting were very hard to generate whereas images generated from lab setting looks similar to real images. Finally, the goal of this project to create a web application to classify/detect plant diseases was achieved.</p>
+<h5 id="references">References</h5>
+<p><a href="https://arxiv.org/pdf/1911.10317.pdf">PlantDoc: A Dataset for Visual Plant Disease Detection</a></p>
+<p><a href="https://machinelearningmastery.com/how-to-train-a-progressive-growing-gan-in-keras-for-synthesizing-faces/">How to Train a Progressive Growing GAN in Keras</a></p>
+<h5 id="links">Links</h5>
+<p>The whole code can be found <a href="https://github.com/rabintiwari45/Plant_Disease">Here</a></p>
+<p>The original dataset can be found <a href="https://github.com/pratikkayal/PlantDoc-Dataset">Here</a> and <a href="https://public.roboflow.com/object-detection/plantdoc">Here</a></p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://rabintiwari45.github.io/Portfolio/" >
+    &copy;  Rabin 2021 
+  </a>
+    <div>
+
+
+
+
+
+
+
+<a href="https://www.linkedin.com/in/rabin-babu-8a1894176/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/rabintiwari45" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </body>
+</html>

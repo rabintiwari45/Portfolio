@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Project 1: Bank Loan Prediction | Rabin</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="A tool that predicts the approval of the loan.">
+    <meta name="generator" content="Hugo 0.82.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+
+  
+  
+    <link rel="stylesheet" href="https://rabintiwari45.github.io/Portfolio/ananke/dist/main.css_5c99d70a7725bacd4c701e995b969fea.css" >
+  
+
+
+
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Project 1: Bank Loan Prediction" />
+<meta property="og:description" content="A tool that predicts the approval of the loan." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rabintiwari45.github.io/Portfolio/post/project-1/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-07-09T10:58:08-04:00" />
+<meta property="article:modified_time" content="2020-07-09T10:58:08-04:00" /><meta property="og:site_name" content="Rabin" />
+
+<meta itemprop="name" content="Project 1: Bank Loan Prediction">
+<meta itemprop="description" content="A tool that predicts the approval of the loan."><meta itemprop="datePublished" content="2020-07-09T10:58:08-04:00" />
+<meta itemprop="dateModified" content="2020-07-09T10:58:08-04:00" />
+<meta itemprop="wordCount" content="4932">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Project 1: Bank Loan Prediction"/>
+<meta name="twitter:description" content="A tool that predicts the approval of the loan."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  
+  <header class="cover bg-top" style="background-image: url('https://rabintiwari45.github.io/Portfolio/images/bank.jpeg');">
+    <div class="pb3-m pb6-l bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://rabintiwari45.github.io/Portfolio/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Rabin
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://rabintiwari45.github.io/Portfolio/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://rabintiwari45.github.io/Portfolio/contact/" title="Contact page">
+              Contact
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://rabintiwari45.github.io/Portfolio/post/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+<a href="https://www.linkedin.com/in/rabin-babu-8a1894176/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/rabintiwari45" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Project 1: Bank Loan Prediction</h1>
+          
+            <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              A tool that predicts the approval of the loan.
+            </h2>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://rabintiwari45.github.io/Portfolio/post/project-1/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://rabintiwari45.github.io/Portfolio/post/project-1/&amp;text=Project%201:%20Bank%20Loan%20Prediction" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://rabintiwari45.github.io/Portfolio/post/project-1/&amp;title=Project%201:%20Bank%20Loan%20Prediction" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Project 1: Bank Loan Prediction</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-07-09T10:58:08-04:00">July 9, 2020</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h1 id="introduction">Introduction</h1>
+<p>A loan is a thing that is borrowed especially a sum of money that is expected to be paid back with interest. A bank loan is the most common form of loan capital for an individual or business provided by banks. A borrower has to return the amount with a certain rate of interest over a period of time. Most of the profit for banks comes from loan interest. Loans are the core business of banks. Since most of the income comes from interest, banks have to follow strict rules and regulations for verification of loans because defaults of loans can cost a huge amount of loss to banks. A machine learning model which can accurately predict defaulters can save money and also helps to reduce the approval time. So the main purpose of this project is to predict the defaulters.</p>
+<h1 id="table-of-contents">Table of Contents</h1>
+<ol>
+<li>Exploratory Data Analysis (EDA)</li>
+<li>Visualizing outliers</li>
+<li>Looking at a unique value in data</li>
+<li>Handling null/missing value</li>
+<li>Handling imbalanced data</li>
+<li>Feature Selection</li>
+<li>Splitting the data for training and testing</li>
+<li>Preprocessing the data for model</li>
+<li>Evaluation Metrics</li>
+<li>Learning Algorithm</li>
+<li>Conclusion</li>
+</ol>
+<h1 id="exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</h1>
+<p>The very first step to approach any data science/machine learning project should begin by looking at the data. We need to understand what lies inside our data. Understanding the features/attributes is the very first step of the project. We will look at the features of our dataset.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">df.columns
+
+Index([&#39;Loan ID&#39;, &#39;Customer ID&#39;, &#39;Loan Status&#39;, &#39;Current Loan Amount&#39;, &#39;Term&#39;,
+       &#39;Credit Score&#39;, &#39;Annual Income&#39;, &#39;Years in current job&#39;,
+       &#39;Home Ownership&#39;, &#39;Purpose&#39;, &#39;Monthly Debt&#39;, &#39;Years of Credit History&#39;,
+       &#39;Months since last delinquent&#39;, &#39;Number of Open Accounts&#39;,
+       &#39;Number of Credit Problems&#39;, &#39;Current Credit Balance&#39;,
+       &#39;Maximum Open Credit&#39;, &#39;Bankruptcies&#39;, &#39;Tax Liens&#39;],
+      dtype=&#39;object&#39;)
+</code></pre></div><p>We have 18 independent features and 1 dependent feature i.e Loan Status in our dataset. The features are self-explanatory.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">df.dtypes
+	
+Loan ID                          object
+Customer ID                      object
+Loan Status                      object
+Current Loan Amount               int64
+Term                             object
+Credit Score                    float64
+Annual Income                   float64
+Years in current job             object
+Home Ownership                   object
+Purpose                          object
+Monthly Debt                    float64
+Years of Credit History         float64
+Months since last delinquent    float64
+Number of Open Accounts           int64
+Number of Credit Problems         int64
+Current Credit Balance            int64
+Maximum Open Credit             float64
+Bankruptcies                    float64
+Tax Liens                       float64
+dtype: object
+</code></pre></div><p>We can see three types of data types. They are float64, int64, and object.</p>
+<ul>
+<li>int64: It represents the integer features in a dataset.</li>
+<li>float64: It represents the features having numbers with a fractional part, containing one or more decimals.</li>
+<li>object: It represents the features having multiple datatypes including string.</li>
+</ul>
+<p>The feature Years in current job is represented as object which is treated as categorical because it contains string and mathematical notation i.e the year is indicated as 8 years or 10+ years but it should be represented as either integer or float. To convert this feature into float we find the string-like years, year, and mathematical notation like &lsquo;+&rsquo;,'&lt;' and replace with blank space using excel find and replace function.</p>
+<p>EDA is an approach to apply different techniques (mostly graphical) to get maximum insight from our data. We can find the descriptive statistics like mean, standard deviation, minimum, maximum, and quartile from the data. We can also see if there are any outliers.</p>
+<pre><code>        Current Loan Amount |  Credit Score   |  Annual Income |   Monthly Debt      | Years of Credit History| Months since last delinquent | Number of Open Accounts | Number of Credit Problems | Current Credit Balance | Maximum Open Credit | Bankruptcies     | Tax Liens
+
+count|	1.000000e+05        |	80846.000000  |	8.084600e+04   |	100000.0000  |	100000.000000         |	46859.000000                 |	100000.00000           |	100000.000000      |	1.000000e+05        |	9.999800e+04      |	99796.000000 |	99990.000000
+mean |	1.176045e+07        |	1076.456089   |	1.378277e+06   |	18472.412336 |	18.199141             |	34.901321                    | 	11.12853               |	0.168310           |	2.946374e+05        |	7.607984e+05      |	0.117740     |	0.029313
+std  |	3.178394e+07        |	1475.403791   |	1.081360e+06   |	12174.992609 |	7.015324              |	21.997829                    |	5.00987                |	0.482705           |	3.761709e+05        |	8.384503e+06      |	0.351424     |	0.258182
+min  |	1.080200e+04        |	585.000000    |	7.662700e+04   |	0.000000     |	3.600000              |	0.000000                     |	0.00000                |	0.000000           |	0.000000e+00        |	0.000000e+00      |	0.000000     |	0.000000
+25%  |	1.796520e+05        |	705.000000    |	8.488440e+05   |	10214.162500 |	13.500000             |	16.000000                    |	8.00000                |	0.000000           |	1.126700e+05        |	2.734380e+05      |	0.000000     |	0.00000
+50%  |	3.122460e+05        |	724.000000    |	1.174162e+06   |	16220.300000 |	16.900000             |	32.000000                    |	10.00000               |	0.000000           |	2.098170e+05        |	4.678740e+05      |	0.000000     |	0.000000
+75%  | 	5.249420e+05        |	741.000000    |	1.650663e+06   |	24012.057500 |	21.700000             |	51.000000                    |	14.00000               |	0.000000           |	3.679588e+05        |	7.829580e+05      |	0.000000     |	0.000000
+max  |	1.000000e+08        |	7510.000000   |	1.655574e+08   |	435843.280000|	70.500000             |	176.000000                   |	76.00000               |	15.000000          |	3.287897e+07        |	1.539738e+09      |	7.000000     |	15.000000
+</code></pre>
+<p>From the above table, we can find out a data entry/measurement error in credit score. The maximum value of a credit score is 7510 which is impossible. The value of credit score lies within 250-850 or 300-900. So we have to deal with those wrong values (which will be discussed later). The maximum value of the current loan amount is also way too higher than its median which can be a potential outlier in data.</p>
+<p>We can also represent our data graphically using histogram and pair plot.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">df.hist(bins=50,figsize=(25,10))
+</code></pre></div><figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/histogram1.png" width="300" height="350"/> 
+</figure>
+
+<p>Histograms are graphs that display the distribution of continuous data. Using histograms we can see the distribution and frequency of occurrence of data. We can find the central tendency, variability, skewness, and so on. We can also visualize the outliers using the histogram. In the above figure, we can see that most of the values of credit score are below 1000 but some values are way too far in a graph. Likewise, we can see the same behavior with a current loan amount. The features like years of credit history, a number of open account, months since last delinquent are right-skewed i.e the tail of the distribution extends towards the right.</p>
+<p>Pair plot is also very useful while visualizing the single variable or relationship between pair of variables. Pair plot builds on top of the histogram and scatters plot. With seaborn, we can visualize the pair plot. It provides really important insight on which variable separates our classes. But pair plots can&rsquo;t be useful if we have a large number of features because the number of pair plots becomes very large which makes it difficult to go through all the pair plots. We can use the seaborn library for the pair plot.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">sns_plot = sns.pairplot(X,hue=&#39;Loan Status&#39;)
+</code></pre></div><figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/output.png"/> 
+</figure>
+
+<p>The histogram on the diagonal allows us to visualize the distribution of a single variable while the scatter plots on the upper and lower triangle show the relationship between two variables. We don&rsquo;t have to look at all plots since the plots in the upper triangle give us the same insight as to the lower triangle only the axis is reversed. We see that tax liens and no of credit problem and no of credit problem and bankruptcies are correlated. We also see the classes are well separated. Pair plot also helps to form a simple classification model by drawing some lines or make the linear separation in our dataset.</p>
+<h1 id="visualizing-outliers">Visualizing Outliers</h1>
+<p>Outliers are those data point which is highly deviated from other values in the dataset. Outliers have a high potential to distract our analysis. So, we must take the necessary step to detect and handle the outliers. Visualizing data with help of a boxplot can be helpful to glance at the outliers. Boxplot is based on a five-point summary (minimum, maximum, median, first quartile, and third quartile). There is also a whisker on both sides box which ranges up to 1.5 times IQR(difference between first and third quartile) from the upper quartile and 1.5 times IQR below the lower quartile. All the data points which don&rsquo;t fall within the whisker are considered outliers.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">sns.boxplot(&#39;Credit Score&#39;,data=df)
+</code></pre></div><figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/boxplot_credit_score.png"/> 
+</figure>
+
+<p>We see lots of outliers in credit scores. As we have discussed earlier, the maximum limit of credit score lies below 900. We have to either remove all the value which contains credit score greater than 900 which will decrease the data point which is not the optimal solution while dealing with outliers or we have to replace the outliers with the mean value of credit score. Carefully looking at the value higher than 900, we can see 0 at the rightmost position of value which seems to have been added accidentally while entering the value. So we will remove 0 from the respective value. Now the boxplot after removing 0.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/boxplot_credit_score_no_outlier.png"/> 
+</figure>
+
+<p>Similarly, we can also see outliers in Current Loan Amount and Maximum Open Credit.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">sns.boxplot(x=&#39;Loan Status&#39;,y=&#39;Current Loan Amount&#39;,data=df)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">sns.boxplot(x=&#39;Loan Status&#39;,y=&#39;Maximum Open Credit&#39;,data=df)
+</code></pre></div><figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/boxplot_current_loan%20amount.png"/> 
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/boxplot_mamimum_open_credit.png"/> 
+</figure>
+
+<p>We see that the outliers in Current Loan Amount are present in only a single class Fully Paid i.e who had successfully paid the loan amount while outliers in Maximum Open Credit are also mostly present in Fully paid. The total number of people who have a high Current Loan Amount and Current Loan Amount is</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">df_curr = df[df[&#39;Current Loan Amount&#39;]&gt;df[&#39;Current Loan Amount&#39;].mean()]
+df_curr[&#39;Current Loan Amount&#39;].value_count()
+
+99999999    11484
+</code></pre></div><p>If we remove those outliers from the dataset then the maximum Current Loan Amount is</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">df_curr_less = df[df[&#39;Current Loan Amount&#39;]&lt;<span style="color:#f92672">df</span><span style="color:#960050;background-color:#1e0010">[&#39;</span><span style="color:#a6e22e">Current</span> <span style="color:#a6e22e">Loan</span> <span style="color:#a6e22e">Amount</span><span style="color:#960050;background-color:#1e0010">&#39;].</span><span style="color:#a6e22e">mean</span><span style="color:#960050;background-color:#1e0010">()]</span>
+<span style="color:#a6e22e">df_curr_less</span><span style="color:#960050;background-color:#1e0010">[&#39;</span><span style="color:#a6e22e">Current</span> <span style="color:#a6e22e">Loan</span> <span style="color:#a6e22e">Amount</span><span style="color:#960050;background-color:#1e0010">&#39;].</span><span style="color:#a6e22e">max</span><span style="color:#960050;background-color:#1e0010">()</span>
+
+<span style="color:#a6e22e">789250</span>
+</code></pre></div><p>We see that the outliers are very large as compared to the maximum loan amount without outliers. It might be the case of a data entry error. The digit 9 might have been accidental. Another reason might be of sampling problem. It is because we might accidentally obtain data that are not from the target population. In our case, those data points might come from a businessman. Generally, businessmen borrow more loans from banks to grow their business. As the loan is also fully paid, the businessman also pays the loan in time. So, removing those data points mightn&rsquo;t be the right solution. For such types of problem we can perform analysis without those data points and with those data points then compare the result. But we don&rsquo;t find other evidence (like businessmen also have high annual income but there is no such information present in their data) to prove that the outlier might be from the sampling problem. So, we will replace those outliers with median values.</p>
+<h1 id="looking-at-the-unique-value-in-our-data">Looking at the unique value in our data</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">df_dup = df[df.duplicated()]
+df_dup.shape
+
+(10728,19)
+</code></pre></div><p>There are 10728 rows that are duplicated in our dataset which we have to remove.
+If we look at the unique value in different categorical features we find that the Purpose and Home Ownership feature have a duplicate category.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">df[&#39;Purpose&#39;].value_counts()
+df[&#39;Home Ownership&#39;].value_counts()
+
+Debt Consolidation      70834
+Home Improvements        5237
+other                    5235
+Other                    2882
+Business Loan            1366
+Buy a Car                1165
+Medical Bills             983
+Buy House                 582
+Take a Trip               488
+major_purchase            330
+small_business            255
+moving                    135
+wedding                   105
+Educational Expenses       91
+vacation                   89
+renewable_energy            8
+
+Home Mortgage    43548
+Rent             37855
+Own Home          8199
+HaveMortgage       183
+</code></pre></div><p>We see the other category is duplicated. One begins with a small O and another begins with capital O. So, we can replace those using the excel find and replace option. We will also replace the minority category whose presence is less than 0.5% with other categories.</p>
+<p>The Home Ownership feature also has a duplicate category. The two categories Home Mortgage and HaveMortgage represent the same category. We will combine two different categories into a single category i.e Home Mortgage. For this task also we can use the excel find and replace option.</p>
+<h1 id="handling-nullmissing-value">Handling null/missing value</h1>
+<p>We can find the total number of missing values in each feature using pandas function.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">df.isna().sum()
+
+Loan ID                             0
+Customer ID                         0
+Loan Status                         0
+Current Loan Amount                 0
+Term                                0
+Credit Score                    19154
+Annual Income                   19154
+Years in current job             3802
+Home Ownership                      0
+Purpose                             0
+Monthly Debt                        0
+Years of Credit History             0
+Months since last delinquent    48337
+Number of Open Accounts             0
+Number of Credit Problems           0
+Current Credit Balance              0
+Maximum Open Credit                 2
+Bankruptcies                      190
+Tax Liens                           9
+</code></pre></div><p>The percentage of missing value in Months since last delinquent is 48%. Since the percentage of missing value is greater than 30% we will not use this feature in our model. Removing all missing values results in loss of data which we don&rsquo;t want. We can impute the missing value with mean, median, or mode. We can also try KNN imputation. But here we will use mean,
+median or mode.
+If our features are categorical then we use the mode (maximum frequency) to fill missing value. For numerical feature we use mean but if there are outliers then we use median which isn&rsquo;t sensitive to outliers.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">mean = df[&#39;Credit Score&#39;].mean()
+anninc_mean = df[&#39;Annual Income&#39;].mean()
+max_open_cre_med = df[&#39;Maximum Open Credit&#39;].median()
+bank_mode = df[&#39;Bankruptcies&#39;].mode()
+bank_mode=bank_mode[0]
+tax_mode = df[&#39;Tax Liens&#39;].mode()
+tax_mode=tax_mode[0]
+year_cur_mode=df[&#39;Years in current job&#39;].mode()
+year_cur_mode = year_cur_mode[0]
+df[&#39;Credit Score&#39;].fillna(value=mean,inplace=True)
+df[&#39;Bankruptcies&#39;].fillna(value=bank_mode,inplace=True)
+df[&#39;Tax Liens&#39;].fillna(value=tax_mode,inplace=True)
+df[&#39;Annual Income&#39;].fillna(value=anninc_mean,inplace=True)
+df[&#39;Maximum Open Credit&#39;].fillna(value=max_open_cre_med,inplace=True)
+df[&#39;Years in current job&#39;].fillna(value=year_cur_mode,inplace=True)
+</code></pre></div><h1 id="handling-the-imbalanced-data">Handling the imbalanced data</h1>
+<p>Let&rsquo;s look at the percentage of each class in dataset.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">df[&#39;Loan Status&#39;].value_counts(normalize=True)
+
+Fully Paid     0.747853
+Charged Off    0.252147
+</code></pre></div><p>We see that our dataset is not balanced. We need to balance our data otherwise our model will be biased towards the majority class. There are two techniques to handle imbalanced datasets.</p>
+<ol>
+<li>Under Sampling</li>
+<li>Over Sampling</li>
+</ol>
+<p>In under-sampling, we reduce the number of data points of the majority class to make the dataset balanced, and in over-sampling, we increase the number of data points of the minority class by duplicating the data points. Most of the time we use oversampling because we don&rsquo;t want to lose our data. We will use oversampling method to balance the dataset. Duplicating data points to increase data doesn&rsquo;t add any new information to the model. Instead, new data points are synthesized from the existing data points. This type of method is referred to as Synthetic Minority Oversampling Technique (SMOTE). SMOTE first selects a minority class instance at random and finds its k nearest minority class neighbors. The synthetic instance is then created by choosing one of the k nearest neighbors b at random and connecting a  and b to form a line segment in the feature space. The best way of doing SMOTE is not applying SMOTE directly to all data. Once we split our data on train and test then, we only apply SMOTE on train data because all the synthetic data should only be used for training not for validation.</p>
+<h1 id="feature-selection">Feature Selection</h1>
+<p>Feature Selection is the process to automatically select those features which contribute most to our model. Having irrelevant features in our data doesn&rsquo;t increase the accuracy of our model. We want to remove those features which don&rsquo;t have a significant effect. We can use seaborn library to plot a heat map to study the correlation between features.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">df_corr = df[[&#39;Current Loan Amount&#39;,&#39;Credit Score&#39;,&#39;Years in current job&#39;,&#39;Annual Income&#39;,&#39;Monthly Debt&#39;,&#39;Years of Credit History&#39;,&#39;Months since last delinquent&#39;,&#39;Number of Open Accounts&#39;,&#39;Number of Credit Problems&#39;,&#39;Current Credit Balance&#39;,&#39;Maximum Open Credit&#39;,&#39;Bankruptcies&#39;,&#39;Tax Liens&#39;]]
+plt.figure(figsize=(12,12))
+sns.heatmap(df_corr.corr(),annot=True,cmap=&#39;coolwarm&#39;)
+</code></pre></div><figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/sns_corr.png"/> 
+</figure>
+
+<p>We see our most of the features are not highly correlated with each others. Two features Number of Credit Problem and Bankruptcies are correlated with each other. Instead, if two features are perfectly correlated, then one doesn&rsquo;t add any additional information. So removing either of the features doesn&rsquo;t affect the accuracy of the model.
+We can also use the Variance Inflation Factor (VIF) for feature selection. VIF is the measure of the amount of multicollinearity in a set of features. We can find the VIF of the respective feature and remove the feature having VIF greater than 10. VIF is calculated by keeping one independent variable as dependent and another independent variable as it is and we fit a linear regression model and calculate the coefficient of determination. The coefficient of determination represents the total variation for a dependent variable that is explained by independent variables. After calculating the coefficient of determination we can find VIF by using the formula.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/vif.png" height="150"/> 
+</figure>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">df_vif = df[[&#39;Current Loan Amount&#39;,&#39;Credit Score&#39;,&#39;Years in current job&#39;,&#39;Annual Income&#39;,&#39;Monthly Debt&#39;,&#39;Years of Credit History&#39;,&#39;Number of Open Accounts&#39;,&#39;Number of Credit Problems&#39;,&#39;Current Credit Balance&#39;,&#39;Maximum Open Credit&#39;,&#39;Bankruptcies&#39;,&#39;Tax Liens&#39;]]
+vif = [variance_inflation_factor(df_vif.values, i) for i in range(df_vif.shape[1])]
+for i in range(0,len(vif)):
+    print(&#34;The vif for {} is {}&#34;.format(df_vif.columns[i],vif[i]))
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">The vif for Current Loan Amount is 5.216088749985775
+The vif for Credit Score is 14.133526238670429
+The vif for Years in current job is 4.285574183873071
+The vif for Annual Income is 3.8662576896476977
+The vif for Monthly Debt is 5.9926280268315
+The vif for Years of Credit History is 8.723717621178784
+The vif for Number of Open Accounts is 7.196910622526113
+The vif for Number of Credit Problems is 8.399897979508326
+The vif for Current Credit Balance is 2.253278721025104
+The vif for Maximum Open Credit is 1.0296436972885672
+The vif for Bankruptcies is 5.516843092735326
+The vif for Tax Liens is 3.2920982116858917
+</code></pre></div><p>We see the VIF for Credit Score is greater than 10 so we will remove this feature from the dataset. Removing those features having high VIF doesn&rsquo;t affect our accuracy or prediction but it is better to remove those variables which don&rsquo;t add value to our model.</p>
+<h1 id="splitting-the-data">Splitting the data</h1>
+<p>Now we will split our data into training and testing sets. This allows us to validate our model on unseen data. We will use stratified train_test_split as the number of classes is highly imbalanced. It preserves the percentage of samples from each class.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">X = df[[&#39;Current Loan Amount&#39;, &#39;Term&#39;, &#39;Annual Income&#39;, &#39;Years in current job&#39;, &#39;Home Ownership&#39;, &#39;Purpose&#39;, &#39;Monthly Debt&#39;, &#39;Years of Credit History&#39;, &#39;Number of Open Accounts&#39;,&#39;Number of Credit Problems&#39;, &#39;Current Credit Balance&#39;,&#39;Maximum Open Credit&#39;, &#39;Bankruptcies&#39;, &#39;Tax Liens&#39;]]
+Y = df[&#39;Loan Status&#39;]
+X_train,X_test,y_train,y_test = train_test_split(X,Y,test_size=0.2 ,random_state=42,stratify=df[&#39;Loan Status&#39;])
+</code></pre></div><h1 id="preprocessin-the-data">Preprocessin the data</h1>
+<p>First of all, we will remove the unnecessary features like Loan ID and Customer ID which are the unique values assigned to each customer. Those features don&rsquo;t add any information to our model.
+Before feeding our data into model we need to encode the categorical value into numerical value. Categorical value refers to the information that has specific categories within the dataset. There are four categorical features in our dataset i.e Loan Status, Term, Home Ownership, Purpose. We can use LabelEncode() class from sci-kit learn library to encode the categorical value. The code will be as follows:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">labelencoder = LabelEncoder()
+df.iloc[:,2] = labelencoder.fit_transform(df.iloc[:,2])
+df.iloc[:,4] = labelencoder.fit_transform(df.iloc[:,4])
+df.iloc[:,8] = labelencoder.fit_transform(df.iloc[:,8])
+df.iloc[:,9] = labelencoder.fit_transform(df.iloc[:,9])
+</code></pre></div><p>Label encoding has the disadvantage that the numeric value can be misinterpreted by some of the algorithms as having order to them. The string will be assigned numbers in increasing alphabetical order. The machine learning model captures the relationship between the categories based on those orders which is not preferred. Instead, we use a different technique for treating categorical variables i.e One Hot Encoding. One Hot Encoding creates an additional feature based on the number of unique values in the features. Then every unique value will be treated as a feature consisting of binary data either 0 or 1.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">df = pd.get_dummies(df,columns=[&#39;Home Ownership&#39;,&#39;Purpose&#39;])
+</code></pre></div><p>Tree-based models don&rsquo;t perform well with one hot encoding if there are too many unique values in the feature. This is because they pick the subset of the feature while splitting the data. If we have a lot of unique value, then the chosen features will be mostly zero which doesn&rsquo;t produce a significant result. So we don&rsquo;t perform one hot encoding while training tree-based models. Linear models don&rsquo;t suffer from this problem.</p>
+<p>The next step for preprocessing is scaling the features. There are various methods to scale the data like standarization, min-max scaler, etc. In the min-max scaler, we simply subtract the minimum value of the feature from the current value and divide it by the difference of maximum and minimum value. This technique re-scales a feature value between 0 and 1. In standarization, we subtract the mean from the current value and divide it by standard deviation. Standarization re-scale a feature value having mean 0 and variance 1. Feature scaling is important when there is a large difference in the magnitude of different features. Generally, tree-based models such as random forest, decision tree doesn&rsquo;t require feature scaling but distance-based model and neural network are highly affected by scaling.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">std = StandardScaler()
+X_train_sc = std.fit_transform(X_train)
+X_test_sc = std.transform(X_test)
+</code></pre></div><h1 id="evaluation-metrics">Evaluation Metrics</h1>
+<p>Evaluation metrics are used to measure the performance of the machine learning model. For classification, problem accuracy is the most frequently used evaluation metrics. However, it is not always true and can be misleading when our data is imbalanced. Evaluation of the performance of a classification model is based on the counts of test records correctly and incorrectly predicted by the model. The confusion matrix is often used to describe the performance of the classification model. We can calculate accuracy, recall, precision, and f1 score from the confusion matrix. The confusion matrix for binary classification consists of true positive, true negative, false positive, false negative.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/confusion_matrix.png" height="170"/> 
+</figure>
+
+<ul>
+<li>
+<p>True Positive: These are cases in which we predicted positive i.e. those who will repay the loan and they have paid the loan.</p>
+</li>
+<li>
+<p>True Negative: These are cases in which we predicted negative i.e. those who will default and they have defaulted.</p>
+</li>
+<li>
+<p>False Positive: These are cases in which we predicted positive but they defaulted.</p>
+</li>
+<li>
+<p>False Negative: These are cases in which we predicted negative but they paid the loan.</p>
+</li>
+</ul>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/formula.png" height="300"/> 
+</figure>
+
+<p>In our case, we care about those predictions which are false-positive which is when it predicts positive how often is it correct. We want to minimize the number of false positives. Instead, we care about high precision.</p>
+<h1 id="learning-algorithm">Learning Algorithm</h1>
+<p>Choosing the right algorithm is also an important phase of a data science project. Since our project is a classification problem we can choose a variety of classification algorithms to make a prediction. Some of the algorithms we have used are listed below:</p>
+<ol>
+<li>Logistic Regression</li>
+<li>K Nearest Neighbors</li>
+<li>Support Vector Machine</li>
+<li>Random Forest Classifier</li>
+</ol>
+<ul>
+<li>
+<h1 id="logistic-regression">Logistic Regression:</h1>
+</li>
+</ul>
+<p>Logistic regression is one of the classical classification methods. It is the most commonly used algorithm for solving a classification problem. Logistic regression can be used for binary classification i.e. when the target variable has two classes and multinomial classification i.e. when the target variable has more than two classes. Logistic regression is named for the function used logistic function. The logistic function is also called the sigmoid function. The logistic function gives an &ldquo;S&rdquo; shape curve that can take any real value and map it into a value between 0 and 1. If the output of the function is greater than 0.5, we classify the output as 1 and if the output is less than 0.5, we classify the output as 0. Below is the figure of the sigmoid function.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/logistic.png" height="300"/> <figcaption>
+            <h4>Image Source: From Wikipedia</h4>
+        </figcaption>
+</figure>
+
+<p>We will use sklearn library to implement logistic regression. Since our data set is imbalanced evaluating our model based on accuracy gives us the misleading result. We use a confusion matrix to show the correct and incorrect predictions. We want to decrease the false positive while maintaining acceptable false negative. We will use a different value of the upsampling ratio for training and compare their result.</p>
+<p>The accuracy using the upsampling ratio of 0.8 is 69% and the confusion matrix is shown in the below figure.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/sns_log_80_per.png" height="300"/> 
+</figure>
+
+<p>The accuracy using the upsampling ratio of 0.9 is 61% and the confusion matrix is shown in the below figure.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/sns_log_90_per.png" height="300"/> 
+</figure>
+
+<p>The accuracy using the upsampling ratio of 1.0 is 54% and the confusion matrix is shown in the below figure.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/sns_log_100_per.png" height="300"/> 
+</figure>
+
+<p>We can see that while increasing the upsampling ratio the accuracy of the model decrease. The number of false-positive also decreases while increasing the upsampling ratio at the same time the number of false-negative also increases. In such case, we can use some threshold values for false-negative and choose the best performing model according to our need.</p>
+<ul>
+<li>
+<h1 id="k-nearest-neighbors">K Nearest Neighbors:</h1>
+</li>
+</ul>
+<p>KNN is a non-parametric classification method. It is used for classification and regression problems. It is one of the simplest algorithms. The key idea of KNN algorithm is nearby points belong to the same class. KNN algorithm makes no assumption about the data. It computes the distance between the testing point to every training example. Then select the k closest instances and their labels. It output the class which is most frequent in labels. The training time of KNN algorithm is zero while the testing time can become very large with a large number of data points in the dataset. This algorithm can be computationally expensive because we need to store all training examples and compute the distance to all training examples for a single prediction. Below is the figure of how KNN algorithm works.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/knnnext.png" height="300"/> 
+</figure>
+
+<p>We can use the same method described above.</p>
+<p>The accuracy using the upsampling ratio of 0.8 is 61% and the confusion matrix is shown in the below figure.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/sns_knn_80_per.png" height="300"/> 
+</figure>
+
+<p>The accuracy using the upsampling ratio of 0.9 is 59% and the confusion matrix is shown in the below figure.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/sns_knn_90_per.png" height="300"/> 
+</figure>
+
+<p>The accuracy using the upsampling ratio of 1.0 is 57% and the confusion matrix is shown in the below figure.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/sns_knn_100_per.png" height="300"/> 
+</figure>
+
+<ul>
+<li>
+<h1 id="support-vector-machine">Support Vector Machine:</h1>
+</li>
+</ul>
+<p>Support Vector Machine is a supervised learning model that analyzes data for classification and regression analysis. It constructs a hyperplane in high dimension space which can be used for classification or regression. It finds a hyperplane that has the largest distance to the nearest training data points. The closest points are called support vectors and hence algorithm is termed a Support Vector Machine. The distance from the nearest training point to the hyperplane is called margin. It tries to maximize the margin. So SVM is also called a max-margin classifier. Max margin can reduce the effect of mislabelled data than min margin and it generalizes better in the future for unseen data. SVM is effective in high dimensional space because data are likely to be linearly separable in high dimensions than in low dimensions.
+Below is the figure SVM algorithm.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/svmnext.png" height="300"/> 
+</figure>
+
+<p>We tried the different values of upsampling ratio but the results were the same. The accuracy of the linear svm model is 73% and the confusion matrix is shown in the below figure.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/sns_svm_100_per.png" height="300"/> 
+</figure>
+
+<ul>
+<li>
+<h1 id="random-forest-classifier">Random Forest Classifier:</h1>
+</li>
+</ul>
+<p>Random Forest is an ensemble learning method for classification and regression problems. A random forest fits several decision trees on various sub-sample of the dataset and outputs the class that is a mode of the classes for classification problem and mean/average of the individual tree for a regression problem. A decision tree is a very powerful and intuitive model. The idea of the decision tree is to divide the space into different regions and fit a very simple model to each region. The model can be linear or constant. To divide into different spaces we use the simple if-else rule that provides branching. We need to select the best attribute/features to generate the branching. To select the attribute at the root we can use some criterion like information gain, Gini index, etc. In the case of information gain, we find the gain of all attributes and attribute with the highest gain is placed at the root, and branches with entropy greater than 0 are further splitting. In this way, we can create a decision tree. Decision trees suffer from overfitting but random forest controls the problem of overfitting. In a random forest, features and datapoint are randomly chosen so that the tree is independent of each other as a result it reduces the high variance problem of the decision tree. Below is the figure of the decision tree.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/decisiontreenext.png" height="300"/> 
+</figure>
+
+<p>We can use the same method described above.</p>
+<p>The accuracy using the upsampling ratio of 0.8 is 71% and the confusion matrix is shown in the below figure.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/sns_rf_80_one_per.png" height="300"/> 
+</figure>
+
+<p>The accuracy using the upsampling ratio of 0.9 is 70% and the confusion matrix is shown in the below figure.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/sns_rf_90_one_per.png" height="300"/> 
+</figure>
+
+<p>The accuracy using the upsampling ratio of 1.0 is 70% and the confusion matrix is shown in the below figure.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/sns_rf_100_one_per.png" height="300"/> 
+</figure>
+
+<p>Analyzing the above confusion matrix, we can see the performance of different algorithms varies significantly. SVM doesn&rsquo;t perform well as it is predicting only a single class for all of the data. At the upsampling ratio of 1.0 logistic regression has the lowest number of false positives as compared to another algorithm which is also the desired objective of our problem. The decrease in false-positive came at the cost of the increase in false negatives.</p>
+<p>The plot below shows the number of true positive, true negative, false positive, false negative for different values of n_neighbor and n_estimator in KNN and Random Forest algorithm respectively.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/knn_n_neighbor_label.png" height="300"/> <figcaption>
+            <h4>Total number of TP TN FP FN for different value of neighbors in KNN</h4>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/knn_algorithm_percentage.png" height="300"/> <figcaption>
+            <h4>Total percentage of TP TN FP FN for different value of neighbors in KNN</h4>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/rf_multiple_model_metric_label.png" height="300"/> <figcaption>
+            <h4>Total number of TP TN FP FN for different value of n_estimators in Random Forest</h4>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/rf_multiple_model_metric_percentage.png" height="300"/> <figcaption>
+            <h4>Total percentage of TP TN FP FN for different value of n_estimators in Random Forest</h4>
+        </figcaption>
+</figure>
+
+<p>From the above plot, we see that if we increase the neighbors in KNN algorithm then the false positive decrease while the false negative increase and if we decrease the neighbors then false positive increases while false negative decreases. In Random Forest, if we increase the number of the tree then false positive increase while false negative decrease, and if we decrease the number of the tree the false-positive decrease while false negative increase. In such cases, we can select a model according to the need of our project.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>In this article &ldquo;Bank Loan Prediction&rdquo;, we discussed the pipeline of a data science/machine learning project. Finally, we achieved the goal of this project i.e to correctly predict defaulters with the help of different machine learning algorithms. We hope such a system can be deployed in real-world situations after further refinement which can be very useful and interesting for the banking sector.</p>
+<h4 id="links">Links</h4>
+<p>The code for the project can be found <a href="https://github.com/rabintiwari45/Bank_Loan_Prediction">Here</a></p>
+<p>The original dataset can be found <a href="https://www.kaggle.com/zaurbegiev/my-dataset">Here</a></p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://rabintiwari45.github.io/Portfolio/" >
+    &copy;  Rabin 2021 
+  </a>
+    <div>
+
+
+
+
+
+
+
+<a href="https://www.linkedin.com/in/rabin-babu-8a1894176/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/rabintiwari45" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </body>
+</html>

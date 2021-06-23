@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Rabin</title>
+    <link>https://rabintiwari45.github.io/Portfolio/post/</link>
+    <description>Recent content in Projects on Rabin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate><atom:link href="https://rabintiwari45.github.io/Portfolio/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project 1: Bank Loan Prediction</title>
+      <link>https://rabintiwari45.github.io/Portfolio/post/project-1/</link>
+      <pubDate>Thu, 09 Jul 2020 10:58:08 -0400</pubDate>
+      
+      <guid>https://rabintiwari45.github.io/Portfolio/post/project-1/</guid>
+      <description>Introduction A loan is a thing that is borrowed especially a sum of money that is expected to be paid back with interest. A bank loan is the most common form of loan capital for an individual or business provided by banks. A borrower has to return the amount with a certain rate of interest over a period of time. Most of the profit for banks comes from loan interest. Loans are the core business of banks.</description>
+    </item>
+    
+    <item>
+      <title>Project 2: Plant Disease Classification and Detection along with Plant leave Generation </title>
+      <link>https://rabintiwari45.github.io/Portfolio/post/project-2/</link>
+      <pubDate>Wed, 01 Jul 2020 11:00:59 -0400</pubDate>
+      
+      <guid>https://rabintiwari45.github.io/Portfolio/post/project-2/</guid>
+      <description>Overview  We will use transfer learning to classify plant disease. We will implement various object detection models like Faster RCNN and SSD to detect plant disease. Generate the fake image using various GANs and study it&amp;rsquo;s utility as training sample for experiment.  Introduction Plant disease is a serious problem for farmes all over the world. It reduces the production and quality of the food. While the global population is rapidly increasing, reduction in availability and access to food increases the cost of food.</description>
+    </item>
+    
+    <item>
+      <title>Project 3: Essay Grader</title>
+      <link>https://rabintiwari45.github.io/Portfolio/post/project-3/</link>
+      <pubDate>Fri, 11 Oct 2019 11:13:32 -0400</pubDate>
+      
+      <guid>https://rabintiwari45.github.io/Portfolio/post/project-3/</guid>
+      <description>Overview  We will implement a simple bag of words model as our baseline and improve upon that. We will train different machine learning algorithms using the features extracted from the training essay. A neural approach to essay grader. (Using the word embedding to train a recurrent layer composed of Long Short Term Memory.)  Table of Content  Introduction Data Set Our Approach Evaluation Metric Baseline Model Feature Extraction Learning Algorithm Introduction to neural approach Word2Vec Feed Forward Neural Network Recurrent Neural Network Training Result and Discussion Conclusion  Introduction Essay scoring is the task of assigning a number to an essay by a professional teacher or grader.</description>
+    </item>
+    
+  </channel>
+</rss>

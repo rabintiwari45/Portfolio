@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Project 3: Essay Grader | Rabin</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="A tool that can score the essay written by students.">
+    <meta name="generator" content="Hugo 0.82.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+
+  
+  
+    <link rel="stylesheet" href="https://rabintiwari45.github.io/Portfolio/ananke/dist/main.css_5c99d70a7725bacd4c701e995b969fea.css" >
+  
+
+
+
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Project 3: Essay Grader" />
+<meta property="og:description" content="A tool that can score the essay written by students." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rabintiwari45.github.io/Portfolio/post/project-3/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-10-11T11:13:32-04:00" />
+<meta property="article:modified_time" content="2019-10-11T11:13:32-04:00" /><meta property="og:site_name" content="Rabin" />
+
+<meta itemprop="name" content="Project 3: Essay Grader">
+<meta itemprop="description" content="A tool that can score the essay written by students."><meta itemprop="datePublished" content="2019-10-11T11:13:32-04:00" />
+<meta itemprop="dateModified" content="2019-10-11T11:13:32-04:00" />
+<meta itemprop="wordCount" content="3106">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Project 3: Essay Grader"/>
+<meta name="twitter:description" content="A tool that can score the essay written by students."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  
+  <header class="cover bg-top" style="background-image: url('https://rabintiwari45.github.io/Portfolio/images/essay.jpg');">
+    <div class="pb3-m pb6-l bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://rabintiwari45.github.io/Portfolio/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Rabin
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://rabintiwari45.github.io/Portfolio/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://rabintiwari45.github.io/Portfolio/contact/" title="Contact page">
+              Contact
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://rabintiwari45.github.io/Portfolio/post/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+<a href="https://www.linkedin.com/in/rabin-babu-8a1894176/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/rabintiwari45" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Project 3: Essay Grader</h1>
+          
+            <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              A tool that can score the essay written by students.
+            </h2>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://rabintiwari45.github.io/Portfolio/post/project-3/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://rabintiwari45.github.io/Portfolio/post/project-3/&amp;text=Project%203:%20Essay%20Grader" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://rabintiwari45.github.io/Portfolio/post/project-3/&amp;title=Project%203:%20Essay%20Grader" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Project 3: Essay Grader</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-10-11T11:13:32-04:00">October 11, 2019</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h1 id="overview">Overview</h1>
+<ul>
+<li>We will implement a simple bag of words model as our baseline and improve upon that.</li>
+<li>We will train different machine learning algorithms using the features extracted from the training essay.</li>
+<li>A neural approach to essay grader. (Using the word embedding to train a recurrent layer composed of Long Short Term Memory.)</li>
+</ul>
+<h1 id="table-of-content">Table of Content</h1>
+<ol>
+<li>Introduction</li>
+<li>Data Set</li>
+<li>Our Approach</li>
+<li>Evaluation Metric</li>
+<li>Baseline Model</li>
+<li>Feature Extraction</li>
+<li>Learning Algorithm</li>
+<li>Introduction to neural approach</li>
+<li>Word2Vec</li>
+<li>Feed Forward Neural Network</li>
+<li>Recurrent Neural Network</li>
+<li>Training</li>
+<li>Result and Discussion</li>
+<li>Conclusion</li>
+</ol>
+<h1 id="introduction">Introduction</h1>
+<p>Essay scoring is the task of assigning a number to an essay by a professional teacher or grader. While automated essay scoring (AES) is a computer program that assigns a score to an essay without the intervention of humans. AES is an application of Natural Language Processing (NLP) and Machine Learning (ML). In 1966, Ellis Batten Page came up with an idea of AES system called Project Essay Grader (PEG). Every year hundreds of thousand essays are scored by teachers. Scoring essays in huge quantity takes a lot of valuable time and is also costly. Manual scoring of essays is also a very tiring job for teachers. With the help of AES system, the teacher can focus on teaching rather than scoring the essay. The number of students going abroad from Nepal for higher study is increasing significantly over the past few years and the number doesn&rsquo;t seem to stop.
+The students have to pass the English proficiency test like IELTS and TOEFL where they have to write an essay in writing test. To ace, the writing test they have to practice a lot, scoring those essays takes a huge amount of time. An AES system can be very useful in such a scenario, providing instant results to students. The goal of this project is to provide an AES system which can yield fast, effective and affordable solution on essay scoring task.</p>
+<h1 id="dataset">DataSet</h1>
+<p>The data for this project is obtained from a past Kaggle competition. The dataset consists of approximately 13000 essays across 8 prompts.
+Following is the list of 8 prompts.</p>
+<ol>
+<li>Prompt 1: Write a letter to your local newspaper in which you state your opinion on the effects computers have on people.</li>
+<li>Write a persuasive essay to the newspaper in which you state your opinion on the effects computers have on people.</li>
+<li>Prompt 3: Write a response by reading &ldquo;Rough Road Ahead&rdquo; by Joe Kurmaskle that explains, how the features of the setting affect the cyclist.</li>
+<li>Prompt 4: Read the Winter Hibiscus by MintonyHO and explain why the author concludes the story with the last paragraph.</li>
+<li>Prompt 5: Read the &ldquo;Narciso Rodriguez&rdquo; by Narciso Rodriguez and describe the mood created by the author.</li>
+<li>Prompt 6: Read &ldquo;The morning Mast&rdquo; by Marcia Amidon lusted and describe the obstacles the builder of the Empire State Building faced in attempting to allow dirigibles to dock there.</li>
+<li>Prompt 7: Write a story about a time when you were patient.</li>
+<li>Prompt 8: Tell a true story in which laugher was one element or part.</li>
+</ol>
+<p>The dataset includes an essay of three types:</p>
+<ol>
+<li>Persuasive essay: In a persuasive essay, the writer has to convince the reader to accept a particular point of view or take a specific action.</li>
+<li>Source dependent essay: In a source dependent essay, the writer has to write a response to the given text.</li>
+<li>Narrative essay: Narrative essays are like telling a story.</li>
+</ol>
+<p>The table below shows the description of the dataset.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/essay_summary.png" height="500"/> 
+</figure>
+
+<h1 id="our-approach">Our Approach</h1>
+<p>We can follow two approaches to solve this problem. Firstly we can train and test on a single prompt which allows us to exploits the specific knowledge of a single prompt to more accurately increase the score to test essays. Another approach is to train on all the training essays and test them on test essays of different prompts which allows to train for a larger set and leverages the knowledge of the whole training set. This approach is similar to transfer learning. This problem can be viewed as a regression task where the goal is to predict a single number or as a classification task where the goal is to assign a class to an essay. We will approach this task as classification which will be necessary for evaluating our model with the evaluation metric Quadratic Weighted Kappa (QWK). We will implement a simple bag of words model as our baseline and improve upon that. Then we will train different machine learning algorithms using features extracted from training essay and bag of words features. Following that, we will also use a neural approach to solve this task where we get the word embedding to train different variants of neural networks (feed-forward network, recurrent network).</p>
+<h1 id="evaluation-metric">Evaluation Metric</h1>
+<p>The most widely used evaluation metric for AES system is Quadratic Weighted Kappa (QWK) which measures the agreement between two raters. The range varies from 0 to 1 where 0 is a random agreement between raters and 1 is a complete agreement between raters. In the event, if the agreement between the raters is less than by chance then this metric may go below 0. In our case, the quadratic weighted kappa is calculated between model score and human score on each set of essays. Other used metrics are mean absolute error(mae), mean squared error(mse), Pearson&rsquo;s correlation coefficient, and spearman&rsquo;s correlation coefficient, etc.</p>
+<h1 id="baseline-model">Baseline Model</h1>
+<p>In this section, each essay is converted into a bag of words which then will be used in a simple logistic regression algorithm for the prediction of the score. To convert essays into a bag of words, we have to do some preprocessing on the essay. First of all, we will remove punctuation, full stop, question mark, exclamatory sign, and numbers. After that, we will remove the stopwords from English and some other anonymization words like PERSON, ORGANIZATION, EMAILS, etc which are used to protect the personal information of the writer. We are using all the essay from different prompts which have different score range. So we have to normalize the score in the range of [0,1]. Since we approached this task as classification we rescale the score in the range [0,10] and round off to the nearest integer. Now, we will use CountVectorizer method from sklearn library to get a bag of words and use a logistic regression algorithm. The test set hasn&rsquo;t been released so we have to split training data into train-test (90%-10%) set. The QWK score of our baseline model is 0.69.</p>
+<h1 id="feature-extraction">Feature Extraction</h1>
+<p>Feature extraction is a general term for constructing new features from original features where the original features get too large or it can&rsquo;t be directly used. When we construct new features then the extracted features should describe the original data. Features extraction is the most important part of any machine learning task. Previously developed AES systems have heavily utilized hand-engineered features for this task. While recently developed neural networks omitted the need for feature engineering. We have extracted features like word count, sentence count, unique word count, various parts of speech such as noun, adjective, adverb, verb, etc. We have also extracted spelling error counts, grammar error count, and punctuation counts. We used python libraries like nltk, spacy, and spell checker for feature extraction.</p>
+<h1 id="learning-algorithm">Learning Algorithm</h1>
+<p>We will use both the extracted features and bag of words features to train different machine learning algorithms. The algorithms used are:</p>
+<ol>
+<li>Logistic Regression</li>
+<li>K Nearest Neighbors</li>
+<li>Support Vector Machine</li>
+<li>Random Forest Classifier</li>
+</ol>
+<ul>
+<li>
+<h1 id="logistic-regression">Logistic Regression:</h1>
+</li>
+</ul>
+<p>Logistic regression is one of the classical classification methods. It is the most commonly used algorithm for solving a classification problem. Logistic regression can be used for binary classification i.e. when the target variable has two classes and multinomial classification i.e. when the target variable has more than two classes. Logistic regression is named for the function used logistic function. The logistic function is also called the sigmoid function. The logistic function gives an &ldquo;S&rdquo; shape curve that can take any real value and map it into a value between 0 and 1. If the output of the function is greater than 0.5, we classify the output as 1 and if the output is less than 0.5, we classify the output as 0. Below is the figure of the sigmoid function.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/function_curve_sigmoid.png" height="300"/> 
+</figure>
+
+<h6 id="image-source-from-wikipedia">Image Source: From Wikipedia</h6>
+<ul>
+<li>
+<h1 id="k-nearest-neighbors">K Nearest Neighbors:</h1>
+</li>
+</ul>
+<p>KNN is a non-parametric classification method. It is used for classification and regression problems. It is one of the simplest algorithms. The key idea of KNN algorithm is nearby point belongs to the same class. KNN algorithm makes no assmption about the data. It computes the distance between the testing points to every training example. Then select the k closest instances and their labels. It output the class which is most frequent in labels. The training time of KNN algorithm is zero while the testing time can become very large with a large number of data points in the dataset. This algorithm can be computationally expensive because we need to store all training examples and compute the distance to all training example for a single prediction. Below is the figure of how KNN algorithm works.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/knnnext.png" height="300"/> 
+</figure>
+
+<ul>
+<li>
+<h1 id="support-vector-machine">Support Vector Machine:</h1>
+</li>
+</ul>
+<p>Support Vector Machine is a supervised learning model that analyzes data for classification and regression analysis. It constructs a hyperplane in high dimension space which can be used for classification or regression. It finds a hyperplane that has the largest distance to the nearest training data points. The closest points are called support vectors and hence algorithm is termed as Support Vector Machine. The distance from the nearest training point to the hyperplane is called margin. It tries to maximize the margin. So SVM is also called max-margin classifier. Max margin can reduce the effect of mislabelled data than min margin and it generalizes better in the future for unseen data. SVM is effective in high dimensional space because data are likely to be linearly separable in high dimensions than in low dimensions.
+Below is the figure SVM algorithm.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/svmnext.png" height="300"/> 
+</figure>
+
+<ul>
+<li>
+<h1 id="random-forest-classifier">Random Forest Classifier:</h1>
+</li>
+</ul>
+<p>Random Forest is an ensemble learning method for classification and regression problems. A random forest fits several decision trees on various sub-sample of the dataset and outputs the class that is the mode of the classes for classification problem and mean/average of the individual tree for a regression problem. A decision tree is a very powerful and intuitive model. The idea of the decision tree is to divide the space into a different region and fit a very simple model to each region. The model can be linear or constant. To divide into different spaces we use a simple if-else rule that provides branching. We need to select the best attribute/features to generate the branching. To select the attribute at the root we can use some criterion like information gain, gini index, etc. In the case of information gain, we find the gain of all attributes and attribute with the highest gain is placed at the root, and a branch with entropy greater than 0 needs further splitting. In this way, we can create a decision tree. Decision trees suffer from overfitting but random forest controls the problem of overfitting. In a random forest, features and datapoint are randomly chosen so that the tree is independent of each other as a result it reduces the high variance problem of the decision tree. Below is the figure of the decision tree.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/decisiontreenext.png" height="300"/> 
+</figure>
+
+<p>Below is the result of the different machine learning algorithms.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/essay_machine1.png" height="500"/> 
+</figure>
+
+<h1 id="a-neural-approach">A neural approach</h1>
+<p>In this section, we will describe a new solution to solve AES problem. The previous method that we have used is inspired by the hand-engineered features which are carefully extracted from the essay. Most of the time it requires domain knowledge to extract important features which can be very difficult and time-consuming. The process of handcrafted can be eliminated by a new deep learning algorithm. The major difference between deep learning and the traditional method is that deep learning automatically learns features from the data instead of hand-crafted features. The features extracted from such algorithm is fed into different neural network architecture such as feed-forward neural network, recurrent neural network, etc, and the desired output is obtained (in our case we want the score of the essay). For the AES task, we will use the word2vec algorithm to extract features (word embedding) from essays.</p>
+<h1 id="word2vec">Word2Vec</h1>
+<p>Word2Vec was developed by Thomas Mikolov in 2013. The main goal of the Word2Vec paper was to introduce a technique that can be used for learning high-quality word vectors from huge datasets. Word2Vec is a way to represent words in some vector space such that similar words are close to each other and dissimilar words are far apart. There are  two models for Word2Vec:</p>
+<ul>
+<li>Continuous Bag of Words</li>
+<li>Skip Gram</li>
+</ul>
+<ol>
+<li>Continuous Bag of Words: The CBOW predicts the current word based on the context. The architecture of the CBOW model consists of the input layer, projection layer, and output layer where the input is the history and future words and output is the current(middle) word.</li>
+</ol>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/cbow.png" height="500"/> <figcaption>
+            <h4>Architecture of CBOW Model</h4>
+        </figcaption>
+</figure>
+
+<h6 id="image-source-httpswwwresearchgatenetfigurethe-skip-gram-model_fig3_268226652httpswwwresearchgatenetfigurethe-skip-gram-model_fig3_268226652">Image Source: <a href="https://www.researchgate.net/figure/The-skip-gram-model_fig3_268226652">https://www.researchgate.net/figure/The-skip-gram-model_fig3_268226652</a></h6>
+<ol start="2">
+<li>Skip Gram: The skip-gram architecture is similar to CBOW, but instead of predicting the current word, it tries to predict the surrounding words given the current word. It uses the current word as an input to predict words within a certain range before and after the current word. We will train a simple neural network with a single hidden layer to predict the surrounding words and use the weights of the hidden layer as word embedding/vector.</li>
+</ol>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/skipgram.png" height="500"/> <figcaption>
+            <h4>Architecture of Skip Gram Model</h4>
+        </figcaption>
+</figure>
+
+<h6 id="image-source-httpswwwresearchgatenetfigurethe-skip-gram-model_fig3_268226652httpswwwresearchgatenetfigurethe-skip-gram-model_fig3_268226652-1">Image Source: <a href="https://www.researchgate.net/figure/The-skip-gram-model_fig3_268226652">https://www.researchgate.net/figure/The-skip-gram-model_fig3_268226652</a></h6>
+<h1 id="feed-forward-neural-network">Feed Forward Neural Network</h1>
+<p>Feedforward neural network is the simple form of neural network. A simple feed-forward neural network is illustrated in the below figure.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/feedforwardnext.png" height="500"/> <figcaption>
+            <h4>Architecture of FeedForward Network</h4>
+        </figcaption>
+</figure>
+
+<h6 id="image-source-httpswwwresearchgatenetfiguresample-of-a-feed-forward-neural-network_fig1_234055177httpswwwresearchgatenetfiguresample-of-a-feed-forward-neural-network_fig1_234055177">Image Source: <a href="https://www.researchgate.net/figure/Sample-of-a-feed-forward-neural-network_fig1_234055177">https://www.researchgate.net/figure/Sample-of-a-feed-forward-neural-network_fig1_234055177</a></h6>
+<p>Each of the circles in the figure represents a single neuron. A neuron is a computational unit that takes n input and produces a single output. The parameter (weights) used in computing output makes the difference in a neuron. The most popular choice for the neuron is the &lsquo;sigmoid&rsquo; unit. Each neuron can have incoming and outgoing arrows. We can stack the different n numbers of the neuron to make a layer. Every neuron can be connected to every neuron in the next layer making it a fully connected layer. At the output, there can be a single neuron or multiple neurons according to the task either regression or classification.</p>
+<h1 id="recurrent-neural-network">Recurrent Neural Network</h1>
+<p>Recurrent Neural Network (RNN) is a class of artificial neural networks. Compared to feed-forward network and convolution neural network, RNN don&rsquo;t work on fixed grid i.e. the input and output doesn&rsquo;t have to be fixed-sized vector. RNN also captures the long-term dependency among the data which makes RNN more powerful and capable of learning more complex patterns from data. RNN is widely used in language modeling because it can capture the sequential information present in the input data i.e. dependency between the word in the text while making a prediction.</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/rnnnext.png" height="400"/> <figcaption>
+            <h4>Architecture of RNN</h4>
+        </figcaption>
+</figure>
+
+<h6 id="image-source-httpswwwknimecomblogtext-generation-with-lstmhttpswwwknimecomblogtext-generation-with-lstm">Image Source: <a href="https://www.knime.com/blog/text-generation-with-lstm">https://www.knime.com/blog/text-generation-with-lstm</a></h6>
+<p>The above figure introduces the RNN architecture where a rectangular box is a hidden layer at a time step t. Each such layer holds several neurons each of which performing a linear matrix operation on its inputs followed by a nonlinear operation. At each time step, the output of the previous step along with the next vector are inputs to the hidden layer to produce a prediction yˆt and output features ht</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">ht = σ(W(hh)ht−1 + W(hx)x[t])
+yˆt = softmax(W(S)ht)
+</code></pre></div><p>The problem arises in RNN during its training. Since we are multiplying the same matrix each time during forwarding propagation, we also multiply the same matrix at each time step during backpropagation. If the value of the matrix is less than 1, then the gradient vanishes so it can&rsquo;t learn long-term dependency or if the value of the matrix is greater than 1, then the gradient explodes.</p>
+<p>The exploding gradient problem can be solved by using weight clipping i.e to clip gradient to a small number whenever they explode. To deal with vanishing gradients, other types of RNN models are more suitable such as Long Short Term Memory (LSTM). LSTM is good at learning long-term dependency as it uses different gates like input, forget and output gate. All three gates control the flow of information during the processing of the input sequence. The hidden state of LSTM is broken into two parts i.e cell state and hidden state. Cell state will store all the information also called memory internal. Forget gate is responsible for deciding what information should be removed from the cell state. Input gate is responsible for dealing with what information should be stored in a cell state. Output gate is responsible for deciding what information should be taken from the cell to give as an output. Following is the figure and equation of LSTM:</p>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/lstm.png" height="300"/> 
+</figure>
+
+<h6 id="image-source-httpscolahgithubioposts2015-08-understanding-lstmshttpscolahgithubioposts2015-08-understanding-lstms">Image Source: <a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/">https://colah.github.io/posts/2015-08-Understanding-LSTMs/</a></h6>
+<h1 id="training">Training</h1>
+<p>For training a neural network, we combine both the hand-engineered features and word embedding. We normalize the score in range [0,1] and train the model using adam optimizer to minimize the mean squared error. To calculate the QWK score we multiply by 10 and round off to the nearest integer. This process achieves a higher QWK score rather than training using a classification approach with neural networks. But this process doesn&rsquo;t have significant improvement with the machine learning model. We also use dropout to avoid overfitting. Since we don&rsquo;t have testing data, the cross-validation approach is used to train and test the model. As we have an essay from different sets, stratification (it preserve the percentage of sample from each set) is also implemented in the cross-validation method.</p>
+<h1 id="result-and-discussion">Result and Discussion</h1>
+<figure>
+    <img src="https://rabintiwari45.github.io/Portfolio/images/essay_result2.png" height="600"/> 
+</figure>
+
+<p>The results of various networks are shown in the above figure. The LSTM model outperforms the baseline model by 10% on quadratic weighted kappa. According to the above results, all the models were able to learn the task properly. The LSTM slightly outperforms other models. The word embedding of skip-gram performs better than other variants. Additionally, we perform cross-validation and the results were greatly improved. With cross-validation, the results were increased by 5%.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>In this project, we proposed an approach based on a recurrent neural network to solve the task of automated essay scoring. We investigated both hand-engineered and neural network methods for feature extraction. We also explored the combination of hand-engineered and automatically learned features. The combined method outperforms the baseline model by 11%. Finally, the goal of this project to create a web application that can grade the essay written by students which can help to improve their writing skills was achieved.</p>
+<h5 id="links">Links</h5>
+<p>The whole code can be found <a href="https://github.com/rabintiwari45/Essay_Grader">Here</a></p>
+<p>The original dataset can be found <a href="https://www.kaggle.com/c/asap-aes">Here</a></p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://rabintiwari45.github.io/Portfolio/" >
+    &copy;  Rabin 2021 
+  </a>
+    <div>
+
+
+
+
+
+
+
+<a href="https://www.linkedin.com/in/rabin-babu-8a1894176/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/rabintiwari45" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </body>
+</html>
